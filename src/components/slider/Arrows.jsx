@@ -6,7 +6,7 @@ const Arrows = ({
 	imgIndexIncrementHandler,
 }) => {
 	return (
-		<div className='mt-36  absolute bottom-[30%]   w-full max-w-[1152px] left-0 right-0 mx-auto px-10 xl:bottom-20 xl:justify-normal	  lg:px-0'>
+		<div className='text-white mt-36  absolute bottom-[30%]   w-full max-w-[1152px] left-0 right-0 mx-auto px-10 xl:bottom-20 xl:justify-normal	  lg:px-0'>
 			<div className='w-full  flex  items-center mb-4 xl:hidden'>
 				{slidersInfo.map((slider, index) => (
 					<div

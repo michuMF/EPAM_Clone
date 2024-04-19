@@ -13,14 +13,14 @@ const SliderImg = ({
 	width,
 }) => {
 	return (
-		<div className='h-screen  text-white'>
+		<div className='h-screen w-full  text-white'>
 			<motion.div
 				style={{
 					backgroundImage: slider,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 				}}
-				className='aspect-video  w-[99.1vw] shrink-0 h-[75%]  xl:h-full bg-neutral-800 object-cover  '>
+				className='w-screen  shrink-0 h-[75%]  xl:h-full bg-neutral-800 object-cover  '>
 				<div className='   w-full max-w-[1152px] mx-auto h-full  flex flex-col   justify-start pt-[120px] xl:justify-center xl:pt-0  px-10	  lg:px-0  '>
 					<h2 className='text-sm tracking-widest font-bold xl:text-lg'>
 						{headline}
