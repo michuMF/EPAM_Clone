@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.text-gradient {
+		background: -webkit-linear-gradient(
+			1.38deg,
+			#00fff0 20.76%,
+			#00f6ff 30.94%,
+			#b896ff 76.73%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.screen-settings {
+		@apply w-full max-w-[1152px] mx-auto h-full;
+	}
+}
