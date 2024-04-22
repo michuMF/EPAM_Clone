@@ -26,7 +26,7 @@ const Navigation = ({ darkMode, setDarkMode }) => {
 						<SwitchTheme darkMode={darkMode} darkModeHandler={darkModeHandler} />
 					</div>
 
-					<nav className=' gap-7 font-semibold hidden lg:flex bg-red-900'>
+					<nav className=' gap-7 font-semibold hidden lg:flex '>
 						<NavigationList />
 					</nav>
 					<div className='hidden  p-[2px] px-[3px] rounded-full  bg-gradient ml-10 mr-4 lg:block'>

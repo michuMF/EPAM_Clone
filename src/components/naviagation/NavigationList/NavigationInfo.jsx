@@ -1,7 +1,11 @@
 const NavigationInfo = ({ setShowBackdrop, showbackdrop, content }) => {
+	const { title, options } = content
+
 	return (
 		<>
 			<div
+				onMouseEnter={() => setShowBackdrop(true)}
+				onMouseLeave={() => setShowBackdrop(false)}
 				className={`${
 					showbackdrop ? "flex" : "hidden"
 				}  absolute w-full top-[77px] left-0 h-screen bg-black`}>
@@ -9,12 +13,11 @@ const NavigationInfo = ({ setShowBackdrop, showbackdrop, content }) => {
 				<div className='screen-settings py-10 px-5  '>
 					<div className='   gap-10 flex  items-start '>
 						<div className=' h-full'>
-							{<p className='text-6xl text-gradient  '>{content.title}</p> ||
-								"fallback"}
+							<p className='text-6xl text-gradient  '>{title}</p>
 						</div>
 						<div className='flex flex-wrap   gap-2  '>
 							<div className=' h-[900px] w-[1200px] flex flex-col flex-wrap'>
-								{content.options?.map(item => {
+								{options.map(item => {
 									return (
 										<div
 											className='flex flex-col  gap-3  h-fit w-[350px] p-4 '
