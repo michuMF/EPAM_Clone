@@ -1,4 +1,3 @@
-import DarkMode from "../components/darkMode/DarkMode"
 import Info from "../components/info/Info"
 import Slider from "../components/slider/Slider"
 import { slidersInfo, slidersInfoTwo } from "../constant/slidersInfo"
