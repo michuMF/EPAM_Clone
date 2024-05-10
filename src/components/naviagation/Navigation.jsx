@@ -17,7 +17,7 @@ const Navigation = ({ darkMode, setDarkMode }) => {
 			className={`${
 				darkMode ? "bg-black text-white" : "bg-white text-black "
 			} fixed top-0 z-10     w-full  border-white border-b     `}>
-			<div className='flex items-center  justify-center h-[75px]  max-w-[1200px] mx-auto  relative   '>
+			<div className='flex items-center  justify-center h-[75px]  max-w-[1200px] mx-auto     '>
 				<Menu darkMode={darkMode} />
 
 				<div className='flex-row-reverse  flex items-center  justify-between   lg:flex-row lg:justify-start lg:px-10 w-full px-6   '>
