@@ -13,7 +13,7 @@ const SliderImg = ({
 	width,
 }) => {
 	return (
-		<div className='h-screen w-full  text-white'>
+		<div className='h-screen w-full  text-white z-10'>
 			<motion.div
 				style={{
 					backgroundImage: slider,

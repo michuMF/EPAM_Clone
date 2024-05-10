@@ -35,21 +35,21 @@ const Slider = ({ imgArray }) => {
 		}
 	}
 
-	// useEffect(() => {
-	// 	const intervalRef = setInterval(() => {
-	// 		const x = dragX.get()
-	// 		if (x === 0) {
-	// 			setImgIndex(pv => {
-	// 				if (pv === imgArray.length - 1) {
-	// 					return 0
-	// 				}
-	// 				return pv + 1
-	// 			})
-	// 		}
-	// 	}, AUTO_DELAY)
+	useEffect(() => {
+		const intervalRef = setInterval(() => {
+			const x = dragX.get()
+			if (x === 0) {
+				setImgIndex(pv => {
+					if (pv === imgArray.length - 1) {
+						return 0
+					}
+					return pv + 1
+				})
+			}
+		}, AUTO_DELAY)
 
-	// 	return () => clearInterval(intervalRef)
-	// }, [dragX, imgArray.length])
+		return () => clearInterval(intervalRef)
+	}, [dragX, imgArray.length])
 
 	const onDragEnd = () => {
 		const x = dragX.get()

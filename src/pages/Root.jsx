@@ -1,4 +1,4 @@
-import { Outlet, useOutletContext } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import Navigation from "../components/naviagation/Navigation"
 import { useState } from "react"
 

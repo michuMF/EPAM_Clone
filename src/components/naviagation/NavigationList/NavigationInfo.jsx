@@ -10,7 +10,7 @@ const NavigationInfo = ({ setShowBackdrop, showBackdrop, content }) => {
 				onMouseEnter={() => setShowBackdrop(true)}
 				onMouseLeave={() => setShowBackdrop(false)}
 				className={`${
-					showBackdrop ? " opacity-100 " : " opacity-0"
+					showBackdrop ? " opacity-100  " : " opacity-0"
 				}  flex  absolute w-full top-[77px] left-0 h-screen transition-opacity  bg-black`}>
 				<div onMouseEnter={() => setShowBackdrop(false)} className=' flex-1 '></div>
 				<div

@@ -33,7 +33,7 @@ const Navigation = ({ darkMode, setDarkMode }) => {
 						<ContactUs darkMode={darkMode} />
 					</div>
 					<LanguageMenu />
-					<Search />
+					<Search darkMode={darkMode} />
 				</div>
 			</div>
 		</header>
