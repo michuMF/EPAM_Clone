@@ -3,7 +3,7 @@ import { navigationList } from "../../../constant/navigationList"
 import NavigationInfo from "./NavigationInfo"
 import { useState } from "react"
 const NavigationList = () => {
-	const [showbackdrop, setShowBackdrop] = useState(false)
+	const [showBackdrop, setShowBackdrop] = useState(false)
 	const [menuInfo, setMenuInfo] = useState(null)
 	const hoverHandler = item => {
 		setMenuInfo(item)
@@ -21,13 +21,13 @@ const NavigationList = () => {
 						className='   w-full h-full  cursor-pointer   transition-colors'>
 						{item.title}
 					</Link>
-					{showbackdrop && (
+					{showBackdrop && (
 						<>
 							<div className='absolute  left-0 right-0 ' />
 							<NavigationInfo
 								key={item.title}
 								setShowBackdrop={setShowBackdrop}
-								showbackdrop={showbackdrop}
+								showBackdrop={showBackdrop}
 								content={menuInfo}
 							/>
 						</>

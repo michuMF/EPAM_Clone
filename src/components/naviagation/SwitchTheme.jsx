@@ -6,8 +6,8 @@ const SwitchTheme = ({ darkMode, darkModeHandler }) => {
 			}`}>
 			<button
 				onClick={darkModeHandler}
-				className={`w-3 h-3 bg-gradient rounded-full absolute top-0 transition-transform duration-500  translate-y-1/2  ${
-					darkMode ? "left-2" : "translate-x-8"
+				className={`w-3 h-3  rounded-full absolute top-0 transition-transform duration-500 left-2 translate-y-1/2  ${
+					darkMode ? "bg-gradient" : "bg-secondGradient translate-x-6"
 				}`}></button>
 		</div>
 	)
