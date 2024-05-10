@@ -6,7 +6,7 @@ import NavigationList from "./NavigationList/NavigationList"
 
 import ContactUs from "./ContactUs"
 import LanguageMenu from "./LanguageMenu"
-import Search from "./Search"
+import Search from "./Search/Search"
 
 const Navigation = ({ darkMode, setDarkMode }) => {
 	const darkModeHandler = () => {
@@ -17,7 +17,7 @@ const Navigation = ({ darkMode, setDarkMode }) => {
 			className={`${
 				darkMode ? "bg-black text-white" : "bg-white text-black "
 			} fixed top-0 z-10     w-full  border-white border-b     `}>
-			<div className='flex items-center  justify-center h-[75px]  max-w-[1200px] mx-auto    '>
+			<div className='flex items-center  justify-center h-[75px]  max-w-[1200px] mx-auto  relative   '>
 				<Menu darkMode={darkMode} />
 
 				<div className='flex-row-reverse  flex items-center  justify-between   lg:flex-row lg:justify-start lg:px-10 w-full px-6   '>
